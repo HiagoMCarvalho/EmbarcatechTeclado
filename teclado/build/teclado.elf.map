@@ -170,8 +170,9 @@ Discarded input sections
  .bss           0x00000000        0x0 CMakeFiles/teclado.dir/teclado.c.obj
  .text.scan_keypad
                 0x00000000      0x28c CMakeFiles/teclado.dir/teclado.c.obj
+ .text.buzz     0x00000000       0x64 CMakeFiles/teclado.dir/teclado.c.obj
  .text.control_components
-                0x00000000       0x80 CMakeFiles/teclado.dir/teclado.c.obj
+                0x00000000       0xa0 CMakeFiles/teclado.dir/teclado.c.obj
  .rodata.control_components
                 0x00000000       0x88 CMakeFiles/teclado.dir/teclado.c.obj
  .rodata.keys   0x00000000       0x10 CMakeFiles/teclado.dir/teclado.c.obj
@@ -484,8 +485,6 @@ Discarded input sections
                 0x00000000        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .text.alarm_pool_core_num
                 0x00000000        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
- .text.sleep_us
-                0x00000000       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_repeating_timer_us
                 0x00000000      0x128 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .text.cancel_repeating_timer
@@ -2329,7 +2328,7 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x37b0
+.text           0x10000100     0x3808
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
@@ -2398,278 +2397,281 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
                 0x100002d4       0x98 CMakeFiles/teclado.dir/teclado.c.obj
                 0x100002d4                init_pins
  .text.startup.main
-                0x1000036c      0x2b0 CMakeFiles/teclado.dir/teclado.c.obj
+                0x1000036c      0x2e0 CMakeFiles/teclado.dir/teclado.c.obj
                 0x1000036c                main
  .text.gpio_set_pulls
-                0x1000061c       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x1000061c                gpio_set_pulls
+                0x1000064c       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x1000064c                gpio_set_pulls
  .text.gpio_init
-                0x10000644       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000644                gpio_init
- .text.panic    0x10000684       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
-                0x10000684                panic
+                0x10000674       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000674                gpio_init
+ .text.panic    0x100006b4       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x100006b4                panic
  .text.hw_claim_or_assert
-                0x100006b4       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
-                0x100006b4                hw_claim_or_assert
+                0x100006e4       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+                0x100006e4                hw_claim_or_assert
  .text.next_striped_spin_lock_num
-                0x100006f8       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
-                0x100006f8                next_striped_spin_lock_num
+                0x10000728       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000728                next_striped_spin_lock_num
  .text.spin_locks_reset
-                0x10000710       0x1c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
-                0x10000710                spin_locks_reset
+                0x10000740       0x1c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+                0x10000740                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x1000072c       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000072c                runtime_init_per_core_irq_priorities
+                0x1000075c       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000075c                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x10000750       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000750                irq_set_enabled
+                0x10000780       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000780                irq_set_enabled
  .text.irq_set_exclusive_handler
-                0x10000774       0x54 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000774                irq_set_exclusive_handler
+                0x100007a4       0x54 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+                0x100007a4                irq_set_exclusive_handler
  .text.lock_init
-                0x100007c8       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
-                0x100007c8                lock_init
+                0x100007f8       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+                0x100007f8                lock_init
  .text.runtime_init_mutex
-                0x100007d8       0x50 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
-                0x100007d8                runtime_init_mutex
+                0x10000808       0x50 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+                0x10000808                runtime_init_mutex
  .text.sleep_until_callback
-                0x10000828       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000858       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .text.alarm_pool_irq_handler
-                0x10000858      0x2fc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000888      0x2fc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .text.runtime_init_default_alarm_pool
-                0x10000b54       0xdc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
-                0x10000b54                runtime_init_default_alarm_pool
+                0x10000b84       0xdc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000b84                runtime_init_default_alarm_pool
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10000c30       0xb0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
-                0x10000c30                alarm_pool_add_alarm_at_force_in_context
+                0x10000c60       0xb0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000c60                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10000ce0       0x74 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
-                0x10000ce0                alarm_pool_cancel_alarm
+                0x10000d10       0x74 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000d10                alarm_pool_cancel_alarm
  .text.sleep_until
-                0x10000d54       0xd8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
-                0x10000d54                sleep_until
+                0x10000d84       0xd8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000d84                sleep_until
+ .text.sleep_us
+                0x10000e5c       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000e5c                sleep_us
  .text.sleep_ms
-                0x10000e2c       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
-                0x10000e2c                sleep_ms
+                0x10000e84       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000e84                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10000e64       0xe0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
-                0x10000e64                best_effort_wfe_or_timeout
+                0x10000ebc       0xe0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x10000ebc                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10000f44       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000f44                timer_hardware_alarm_claim
+                0x10000f9c       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000f9c                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10000f58       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000f58                timer_time_us_64
+                0x10000fb0       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000fb0                timer_time_us_64
  .text.time_us_64
-                0x10000f68       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000f68                time_us_64
+                0x10000fc0       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000fc0                time_us_64
  .text.busy_wait_until
-                0x10000f7c       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000f7c                busy_wait_until
+                0x10000fd4       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000fd4                busy_wait_until
  .text.clock_configure_int_divider
-                0x10000f9c       0xf4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10000f9c                clock_configure_int_divider
+                0x10000ff4       0xf4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10000ff4                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10001090       0xe8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001090                clock_configure_undivided
+                0x100010e8       0xe8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100010e8                clock_configure_undivided
  .text.clock_get_hz
-                0x10001178        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001178                clock_get_hz
+                0x100011d0        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100011d0                clock_get_hz
  .text.pll_init
-                0x10001184       0xa4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001184                pll_init
+                0x100011dc       0xa4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+                0x100011dc                pll_init
  .text.tick_start
-                0x10001228       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
-                0x10001228                tick_start
+                0x10001280       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+                0x10001280                tick_start
  .text.rom_func_lookup
-                0x10001238       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001238                rom_func_lookup
+                0x10001290       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10001290                rom_func_lookup
  .text.rom_data_lookup
-                0x10001248       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001248                rom_data_lookup
+                0x100012a0       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100012a0                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10001258       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001258                rom_funcs_lookup
+                0x100012b0       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100012b0                rom_funcs_lookup
  .text.xosc_init
-                0x1000129c       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x1000129c                xosc_init
+                0x100012f4       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x100012f4                xosc_init
  .text.first_per_core_initializer
-                0x100012c4        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000131c        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
  .text.hard_assertion_failure
-                0x100012c8        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100012c8                hard_assertion_failure
+                0x10001320        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001320                hard_assertion_failure
  .text.runtime_run_initializers
-                0x100012d4       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100012d4                runtime_run_initializers
+                0x1000132c       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000132c                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x100012fc       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x100012fc                runtime_init_early_resets
+                0x10001354       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10001354                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10001328       0x1c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10001328                runtime_init_usb_power_down
- .text.runtime_init_post_clock_resets
-                0x10001344       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10001344                runtime_init_post_clock_resets
- .text.runtime_init_rp2040_gpio_ie_disable
-                0x10001364       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10001364                runtime_init_rp2040_gpio_ie_disable
- .text.runtime_init_spin_locks_reset
-                0x10001378        0x8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10001378                runtime_init_spin_locks_reset
- .text.runtime_init_install_ram_vector_table
                 0x10001380       0x1c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10001380                runtime_init_install_ram_vector_table
+                0x10001380                runtime_init_usb_power_down
+ .text.runtime_init_post_clock_resets
+                0x1000139c       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x1000139c                runtime_init_post_clock_resets
+ .text.runtime_init_rp2040_gpio_ie_disable
+                0x100013bc       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100013bc                runtime_init_rp2040_gpio_ie_disable
+ .text.runtime_init_spin_locks_reset
+                0x100013d0        0x8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100013d0                runtime_init_spin_locks_reset
+ .text.runtime_init_install_ram_vector_table
+                0x100013d8       0x1c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100013d8                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x1000139c       0xd8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
-                0x1000139c                runtime_init_clocks
- .text          0x10001474       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x100013f4       0xd8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+                0x100013f4                runtime_init_clocks
+ .text          0x100014cc       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.__wrap___aeabi_idiv
-                0x10001484       0x50 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
-                0x10001484                __wrap___aeabi_idivmod
-                0x10001484                divmod_s32s32
-                0x10001484                div_s32s32
-                0x10001484                __wrap___aeabi_idiv
-                0x1000148c                divmod_s32s32_unsafe
-                0x100014b8                divmod_s32s32_savestate
+                0x100014dc       0x50 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x100014dc                __wrap___aeabi_idivmod
+                0x100014dc                divmod_s32s32
+                0x100014dc                div_s32s32
+                0x100014dc                __wrap___aeabi_idiv
+                0x100014e4                divmod_s32s32_unsafe
+                0x10001510                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x100014d4       0x4c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
-                0x100014d4                __wrap___aeabi_uidiv
-                0x100014d4                __wrap___aeabi_uidivmod
-                0x100014d4                div_u32u32
-                0x100014d4                divmod_u32u32
-                0x100014dc                divmod_u32u32_unsafe
-                0x10001504                divmod_u32u32_savestate
+                0x1000152c       0x4c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x1000152c                __wrap___aeabi_uidiv
+                0x1000152c                __wrap___aeabi_uidivmod
+                0x1000152c                div_u32u32
+                0x1000152c                divmod_u32u32
+                0x10001534                divmod_u32u32_unsafe
+                0x1000155c                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10001520      0x424 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
-                0x10001520                div_s64s64
-                0x10001520                divmod_s64s64
-                0x10001520                __wrap___aeabi_ldivmod
-                0x10001550                divmod_u64u64
-                0x10001550                div_u64u64
-                0x10001550                __wrap___aeabi_uldivmod
-                0x10001560                divmod_u64u64_savestate
-                0x10001580                divmod_s64s64_unsafe
-                0x10001608                divmod_u64u64_unsafe
+                0x10001578      0x424 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x10001578                div_s64s64
+                0x10001578                divmod_s64s64
+                0x10001578                __wrap___aeabi_ldivmod
+                0x100015a8                divmod_u64u64
+                0x100015a8                div_u64u64
+                0x100015a8                __wrap___aeabi_uldivmod
+                0x100015b8                divmod_u64u64_savestate
+                0x100015d8                divmod_s64s64_unsafe
+                0x10001660                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10001944       0x60 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001944                __wrap___aeabi_drsub
-                0x1000194a                __wrap___aeabi_dsub
-                0x10001954                __wrap___aeabi_dadd
-                0x1000195e                __wrap___aeabi_ddiv
-                0x10001992                __wrap___aeabi_dmul
+                0x1000199c       0x60 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x1000199c                __wrap___aeabi_drsub
+                0x100019a2                __wrap___aeabi_dsub
+                0x100019ac                __wrap___aeabi_dadd
+                0x100019b6                __wrap___aeabi_ddiv
+                0x100019ea                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x100019a4       0x6c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x100019a4                __wrap___aeabi_cdrcmple
-                0x100019b4                __wrap___aeabi_cdcmpeq
-                0x100019b4                __wrap___aeabi_cdcmple
+                0x100019fc       0x6c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x100019fc                __wrap___aeabi_cdrcmple
+                0x10001a0c                __wrap___aeabi_cdcmpeq
+                0x10001a0c                __wrap___aeabi_cdcmple
  .text.__wrap___aeabi_dcmplt
-                0x10001a10        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001a10                __wrap___aeabi_dcmplt
+                0x10001a68        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10001a68                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmpge
-                0x10001a1c       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001a1c                __wrap___aeabi_dcmpge
+                0x10001a74       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10001a74                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10001a2c        0xa CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001a2c                __wrap___aeabi_dcmpgt
+                0x10001a84        0xa CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10001a84                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10001a36       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001a36                __wrap___aeabi_dcmpun
- *fill*         0x10001a4e        0x2 
+                0x10001a8e       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10001a8e                __wrap___aeabi_dcmpun
+ *fill*         0x10001aa6        0x2 
  .text.__wrap___aeabi_i2d
-                0x10001a50       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001a50                __wrap___aeabi_ui2d
-                0x10001a58                __wrap___aeabi_i2d
+                0x10001aa8       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10001aa8                __wrap___aeabi_ui2d
+                0x10001ab0                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10001a88       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001a88                double2int_z
-                0x10001a88                __wrap___aeabi_d2iz
+                0x10001ae0       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10001ae0                double2int_z
+                0x10001ae0                __wrap___aeabi_d2iz
  .text.__wrap___aeabi_d2uiz
-                0x10001ad0       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10001ad0                __wrap___aeabi_d2uiz
-                0x10001ad0                double2uint
+                0x10001b28       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10001b28                __wrap___aeabi_d2uiz
+                0x10001b28                double2uint
  .text.missing_double_func_shim
-                0x10001ae0        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x10001b38        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
  .text.__aeabi_double_init
-                0x10001aec       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
-                0x10001aec                __aeabi_double_init
+                0x10001b44       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x10001b44                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10001b8c       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x10001b8c                double_table_shim_on_use_helper
+                0x10001be4       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10001be4                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x10001bb8       0x32 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10001bb8                __wrap___aeabi_lmul
- *fill*         0x10001bea        0x2 
+                0x10001c10       0x32 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x10001c10                __wrap___aeabi_lmul
+ *fill*         0x10001c42        0x2 
  .text.missing_float_func_shim
-                0x10001bec        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x10001c44        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
  .text.__aeabi_float_init
-                0x10001bf8       0x5c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
-                0x10001bf8                __aeabi_float_init
- .text          0x10001c54       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001c54                __aeabi_mem_init
- .text.memcpy   0x10001c64        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001c64                __wrap_memcpy
-                0x10001c64                __wrap___aeabi_memcpy
+                0x10001c50       0x5c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x10001c50                __aeabi_float_init
+ .text          0x10001cac       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10001cac                __aeabi_mem_init
+ .text.memcpy   0x10001cbc        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10001cbc                __wrap_memcpy
+                0x10001cbc                __wrap___aeabi_memcpy
  .text._out_null
-                0x10001c70        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10001cc8        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x10001c74       0xac CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10001ccc       0xac CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x10001d20      0x250 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10001d78      0x250 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x10001f70       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10001fc8       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x10001f80       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x10001f90      0x464 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x100023f4      0x3c0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10001fd8       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x10001fe8      0x464 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x1000244c      0x3c0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x100027b4      0xbc8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x1000280c      0xbc8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x1000337c       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
-                0x1000337c                vfctprintf
+                0x100033d4       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x100033d4                vfctprintf
  .text.weak_raw_vprintf
-                0x1000339c       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
-                0x1000339c                weak_raw_vprintf
- .text._exit    0x100033cc        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-                0x100033cc                _exit
- .text.exit     0x100033d0        0x8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-                0x100033d0                exit
+                0x100033f4       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x100033f4                weak_raw_vprintf
+ .text._exit    0x10003424        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x10003424                _exit
+ .text.exit     0x10003428        0x8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x10003428                exit
  .text.runtime_init
-                0x100033d8       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-                0x100033d8                runtime_init
+                0x10003430       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x10003430                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10003404       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000345c       0x10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x10003414       0x94 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000346c       0x94 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x100034a8       0x64 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003500       0x64 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x1000350c      0x100 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000350c                stdio_put_string
+                0x10003564      0x100 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003564                stdio_put_string
  .text.stdio_init_all
-                0x1000360c        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000360c                stdio_init_all
+                0x10003664        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003664                stdio_init_all
  .text.__wrap_putchar
-                0x10003610       0x98 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10003610                __wrap_putchar
-                0x10003610                stdio_putchar
+                0x10003668       0x98 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003668                __wrap_putchar
+                0x10003668                stdio_putchar
  .text.__wrap_puts
-                0x100036a8       0x3c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100036a8                stdio_puts
-                0x100036a8                __wrap_puts
+                0x10003700       0x3c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003700                stdio_puts
+                0x10003700                __wrap_puts
  .text.__wrap_vprintf
-                0x100036e4       0xd4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100036e4                stdio_vprintf
-                0x100036e4                __wrap_vprintf
+                0x1000373c       0xd4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000373c                stdio_vprintf
+                0x1000373c                __wrap_vprintf
  .text.__wrap_printf
-                0x100037b8       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100037b8                __wrap_printf
-                0x100037b8                stdio_printf
- .text.strlen   0x100037d0       0x5c C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp\libg.a(libc_a-strlen-stub.o)
-                0x100037d0                strlen
+                0x10003810       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003810                __wrap_printf
+                0x10003810                stdio_printf
+ .text.strlen   0x10003828       0x5c C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp\libg.a(libc_a-strlen-stub.o)
+                0x10003828                strlen
  *(.fini)
- .fini          0x1000382c        0x4 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crti.o
-                0x1000382c                _fini
- .fini.__stub   0x10003830       0x40 linker stubs
+ .fini          0x10003884        0x4 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crti.o
+                0x10003884                _fini
+ .fini.__stub   0x10003888       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2680,169 +2682,169 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10003870                        . = ALIGN (0x4)
-                0x10003870                        PROVIDE (__preinit_array_start = .)
+                0x100038c8                        . = ALIGN (0x4)
+                0x100038c8                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x10003870        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10003870                __pre_init_runtime_init_early_resets
+                0x100038c8        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100038c8                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x10003874        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10003874                __pre_init_runtime_init_usb_power_down
+                0x100038cc        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100038cc                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x10003878        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x100038d0        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .preinit_array.00300
-                0x1000387c        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100038d4        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .preinit_array.00350
-                0x10003880        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x100038d8        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
  .preinit_array.00350
-                0x10003884        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+                0x100038dc        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
  .preinit_array.00500
-                0x10003888        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10003888                __pre_init_runtime_init_clocks
+                0x100038e0        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100038e0                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x1000388c        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x1000388c                __pre_init_runtime_init_post_clock_resets
+                0x100038e4        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100038e4                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x10003890        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10003890                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x100038e8        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100038e8                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x10003894        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10003894                __pre_init_runtime_init_spin_locks_reset
+                0x100038ec        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100038ec                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x10003898        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
-                0x10003898                __pre_init_runtime_init_mutex
+                0x100038f0        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+                0x100038f0                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x1000389c        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x1000389c                __pre_init_runtime_init_install_ram_vector_table
+                0x100038f4        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100038f4                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x100038a0        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
-                0x100038a0                __pre_init_runtime_init_default_alarm_pool
+                0x100038f8        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x100038f8                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x100038a4        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100038a4                __pre_init_first_per_core_initializer
+                0x100038fc        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100038fc                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x100038a8        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
-                0x100038a8                __pre_init_runtime_init_per_core_irq_priorities
+                0x10003900        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+                0x10003900                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x100038ac                        PROVIDE (__preinit_array_end = .)
-                0x100038ac                        . = ALIGN (0x4)
-                0x100038ac                        PROVIDE (__init_array_start = .)
+                0x10003904                        PROVIDE (__preinit_array_end = .)
+                0x10003904                        . = ALIGN (0x4)
+                0x10003904                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x100038ac        0x4 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x100038b0                        PROVIDE (__init_array_end = .)
-                0x100038b0                        . = ALIGN (0x4)
+ .init_array    0x10003904        0x4 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10003908                        PROVIDE (__init_array_end = .)
+                0x10003908                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
                 [!provide]                        PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x100038b0        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x100038b0                        . = ALIGN (0x4)
+ .eh_frame      0x10003908        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10003908                        . = ALIGN (0x4)
 
-.glue_7         0x100038b0        0x0
- .glue_7        0x100038b0        0x0 linker stubs
+.glue_7         0x10003908        0x0
+ .glue_7        0x10003908        0x0 linker stubs
 
-.glue_7t        0x100038b0        0x0
- .glue_7t       0x100038b0        0x0 linker stubs
+.glue_7t        0x10003908        0x0
+ .glue_7t       0x10003908        0x0 linker stubs
 
-.vfp11_veneer   0x100038b0        0x0
- .vfp11_veneer  0x100038b0        0x0 linker stubs
+.vfp11_veneer   0x10003908        0x0
+ .vfp11_veneer  0x10003908        0x0 linker stubs
 
-.v4_bx          0x100038b0        0x0
- .v4_bx         0x100038b0        0x0 linker stubs
+.v4_bx          0x10003908        0x0
+ .v4_bx         0x10003908        0x0 linker stubs
 
-.iplt           0x100038b0        0x0
- .iplt          0x100038b0        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10003908        0x0
+ .iplt          0x10003908        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x100038b0      0x33c
+.rodata         0x10003908      0x33c
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x100038b0       0xc9 CMakeFiles/teclado.dir/teclado.c.obj
+                0x10003908       0xc9 CMakeFiles/teclado.dir/teclado.c.obj
                                  0x17 (size before relaxing)
- *fill*         0x10003979        0x3 
+ *fill*         0x100039d1        0x3 
  .rodata.col_pins
-                0x1000397c       0x10 CMakeFiles/teclado.dir/teclado.c.obj
-                0x1000397c                col_pins
+                0x100039d4       0x10 CMakeFiles/teclado.dir/teclado.c.obj
+                0x100039d4                col_pins
  .rodata.row_pins
-                0x1000398c       0x10 CMakeFiles/teclado.dir/teclado.c.obj
-                0x1000398c                row_pins
+                0x100039e4       0x10 CMakeFiles/teclado.dir/teclado.c.obj
+                0x100039e4                row_pins
  .rodata.panic.str1.4
-                0x1000399c       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x100039f4       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x1000399c       0x22 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x100039f4       0x22 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.hard_assertion_failure.str1.4
-                0x1000399c        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100039f4        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x1000399c       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x100039f4       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x1000399c        0x1 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x100039f4        0x1 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
  .rodata.str1.4
-                0x1000399c       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100039f4       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_84
-                0x1000399c        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100039f4        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_78
-                0x100039a8        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003a00        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_60
-                0x100039b4        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003a0c        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_54
-                0x100039c0        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003a18        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_48
-                0x100039cc        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003a24        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_42
-                0x100039d8        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003a30        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_34
-                0x100039e4        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003a3c        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_26
-                0x100039f0        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003a48        0xc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata._ftoa.str1.4
-                0x100039fc       0x15 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10003a54       0x15 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .rodata._vsnprintf
-                0x100039fc      0x19c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10003a54      0x19c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x10003b98       0x50 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x10003bf0       0x50 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .rodata.crlf_str.0
-                0x10003be8        0x2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10003bec                        . = ALIGN (0x4)
- *fill*         0x10003bea        0x2 
+                0x10003c40        0x2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003c44                        . = ALIGN (0x4)
+ *fill*         0x10003c42        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10003bec                        . = ALIGN (0x4)
+                0x10003c44                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10003bec                        __exidx_start = .
+                0x10003c44                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10003bec                        __exidx_end = .
-                0x10003bec                        . = ALIGN (0x4)
-                0x10003bec                        __binary_info_start = .
+                0x10003c44                        __exidx_end = .
+                0x10003c44                        . = ALIGN (0x4)
+                0x10003c44                        __binary_info_start = .
 
-.binary_info    0x10003bec       0x20
+.binary_info    0x10003c44       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x10003bec        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c44        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr78
-                0x10003bf0        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c48        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr60
-                0x10003bf4        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c4c        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr54
-                0x10003bf8        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c50        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr48
-                0x10003bfc        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c54        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr42
-                0x10003c00        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c58        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr34
-                0x10003c04        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c5c        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr26
-                0x10003c08        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x10003c60        0x4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  *(.binary_info.*)
-                0x10003c0c                        __binary_info_end = .
+                0x10003c64                        __binary_info_end = .
 
-.rel.dyn        0x10003c0c        0x0
- .rel.iplt      0x10003c0c        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10003c0c                        . = ALIGN (0x4)
+.rel.dyn        0x10003c64        0x0
+ .rel.iplt      0x10003c64        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10003c64                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2856,7 +2858,7 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
                 0x200000c0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0x128 load address 0x10003c0c
+.data           0x200000c0      0x128 load address 0x10003c64
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2902,23 +2904,23 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
                 0x200001e8                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x200001e8        0x0 load address 0x10003d34
+                0x200001e8        0x0 load address 0x10003d8c
  .tm_clone_table
                 0x200001e8        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x200001e8        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x200001e8        0x0 load address 0x10003d34
+.igot.plt       0x200001e8        0x0 load address 0x10003d8c
  .igot.plt      0x200001e8        0x0 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x200001e8        0x0 load address 0x10003d34
+.tdata          0x200001e8        0x0 load address 0x10003d8c
                 0x200001e8                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x200001e8                        __tdata_end = .
                 0x200001e8                        PROVIDE (__data_end__ = .)
-                0x10003c0c                        __etext = LOADADDR (.data)
+                0x10003c64                        __etext = LOADADDR (.data)
 
-.tbss           0x200001e8        0x0 load address 0x10003d34
+.tbss           0x200001e8        0x0 load address 0x10003d8c
                 0x200001e8                        . = ALIGN (0x4)
                 0x200001e8                        __bss_start__ = .
                 0x200001e8                        __tls_base = .
@@ -2926,7 +2928,7 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
  *(.tcommon)
                 0x200001e8                        __tls_end = .
 
-.bss            0x200001e8      0x3e8 load address 0x10003d34
+.bss            0x200001e8      0x3e8 load address 0x10003d8c
                 0x200001e8                        . = ALIGN (0x4)
                 0x200001e8                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2955,26 +2957,26 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
                 0x200005d0                        . = ALIGN (0x4)
                 0x200005d0                        __bss_end__ = .
 
-.heap           0x200005d0      0x800 load address 0x10003d34
+.heap           0x200005d0      0x800 load address 0x10003d8c
                 0x200005d0                        __end__ = .
                 0x200005d0                        end = __end__
  *(.heap*)
  .heap          0x200005d0      0x800 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10003d34
+.scratch_x      0x20040000        0x0 load address 0x10003d8c
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10003d34                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10003d8c                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10003d34
+.scratch_y      0x20041000        0x0 load address 0x10003d8c
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10003d34                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10003d8c                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -2983,9 +2985,9 @@ LOAD C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/1
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
 
-.flash_end      0x10003d34        0x0
+.flash_end      0x10003d8c        0x0
  *(.embedded_end_block*)
-                0x10003d34                        PROVIDE (__flash_binary_end = .)
+                0x10003d8c                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3184,353 +3186,353 @@ LOAD linker stubs
  .comment       0x00000045       0x46 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
  .comment       0x00000045       0x46 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_info     0x00000000    0x1ab99
- .debug_info    0x00000000     0x1be3 CMakeFiles/teclado.dir/teclado.c.obj
- .debug_info    0x00001be3     0x2437 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x0000401a      0x1bf CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_info    0x000041d9      0x995 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
- .debug_info    0x00004b6e      0x458 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x00004fc6      0x245 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_info    0x0000520b     0x21a8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x000073b3      0x15f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x00007512     0x2803 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
- .debug_info    0x00009d15     0x485e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
- .debug_info    0x0000e573     0x2b11 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x00011084     0x2935 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x000139b9      0x4e5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x00013e9e      0x248 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_info    0x000140e6      0x633 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x00014719      0x1cc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x000148e5      0x21a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x00014aff      0x795 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_info    0x00015294      0x780 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_info    0x00015a14       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x00015a37       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_info    0x00015a5a       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_info    0x00015a7d      0x2d0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_info    0x00015d4d       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_info    0x00015d71       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x00015d95       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_info    0x00015db8      0x2bc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_info    0x00016074       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x00016097      0x2e2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_info    0x00016379     0x211a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x00018493       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_info    0x000184b6      0xb54 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_info    0x0001900a     0x1b8f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_info     0x00000000    0x1adbd
+ .debug_info    0x00000000     0x1e07 CMakeFiles/teclado.dir/teclado.c.obj
+ .debug_info    0x00001e07     0x2437 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x0000423e      0x1bf CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_info    0x000043fd      0x995 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+ .debug_info    0x00004d92      0x458 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x000051ea      0x245 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_info    0x0000542f     0x21a8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x000075d7      0x15f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x00007736     0x2803 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x00009f39     0x485e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+ .debug_info    0x0000e797     0x2b11 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x000112a8     0x2935 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x00013bdd      0x4e5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x000140c2      0x248 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_info    0x0001430a      0x633 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x0001493d      0x1cc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x00014b09      0x21a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x00014d23      0x795 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_info    0x000154b8      0x780 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_info    0x00015c38       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x00015c5b       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_info    0x00015c7e       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_info    0x00015ca1      0x2d0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_info    0x00015f71       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_info    0x00015f95       0x24 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x00015fb9       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_info    0x00015fdc      0x2bc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_info    0x00016298       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x000162bb      0x2e2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_info    0x0001659d     0x211a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x000186b7       0x23 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_info    0x000186da      0xb54 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_info    0x0001922e     0x1b8f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_abbrev   0x00000000     0x4bfb
- .debug_abbrev  0x00000000      0x3c8 CMakeFiles/teclado.dir/teclado.c.obj
- .debug_abbrev  0x000003c8      0x4f9 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x000008c1      0x12b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_abbrev  0x000009ec      0x33b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000d27      0x20d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x00000f34      0x1bb CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_abbrev  0x000010ef      0x5ff CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x000016ee       0xee CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x000017dc      0x48c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x00001c68      0x67b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
- .debug_abbrev  0x000022e3      0x4f2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x000027d5      0x4e2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00002cb7      0x1d2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x00002e89      0x145 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_abbrev  0x00002fce      0x1d7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x000031a5      0x11b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x000032c0      0x182 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x00003442      0x222 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_abbrev  0x00003664      0x294 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_abbrev  0x000038f8       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x0000390a       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_abbrev  0x0000391c       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_abbrev  0x0000392e      0x1bb CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_abbrev  0x00003ae9       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_abbrev  0x00003afd       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_abbrev  0x00003b11       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_abbrev  0x00003b23      0x19e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_abbrev  0x00003cc1       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00003cd3       0xb8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_abbrev  0x00003d8b      0x525 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x000042b0       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_abbrev  0x000042c2      0x352 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_abbrev  0x00004614      0x5e7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_abbrev   0x00000000     0x4c23
+ .debug_abbrev  0x00000000      0x3f0 CMakeFiles/teclado.dir/teclado.c.obj
+ .debug_abbrev  0x000003f0      0x4f9 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x000008e9      0x12b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_abbrev  0x00000a14      0x33b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000d4f      0x20d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x00000f5c      0x1bb CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_abbrev  0x00001117      0x5ff CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x00001716       0xee CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x00001804      0x48c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x00001c90      0x67b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x0000230b      0x4f2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x000027fd      0x4e2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x00002cdf      0x1d2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00002eb1      0x145 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_abbrev  0x00002ff6      0x1d7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x000031cd      0x11b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x000032e8      0x182 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x0000346a      0x222 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_abbrev  0x0000368c      0x294 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_abbrev  0x00003920       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x00003932       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_abbrev  0x00003944       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_abbrev  0x00003956      0x1bb CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_abbrev  0x00003b11       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_abbrev  0x00003b25       0x14 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_abbrev  0x00003b39       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_abbrev  0x00003b4b      0x19e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_abbrev  0x00003ce9       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x00003cfb       0xb8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_abbrev  0x00003db3      0x525 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x000042d8       0x12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_abbrev  0x000042ea      0x352 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_abbrev  0x0000463c      0x5e7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
 .debug_loclists
-                0x00000000     0xff92
+                0x00000000    0x100d7
  .debug_loclists
-                0x00000000     0x124c CMakeFiles/teclado.dir/teclado.c.obj
+                0x00000000     0x1391 CMakeFiles/teclado.dir/teclado.c.obj
  .debug_loclists
-                0x0000124c     0x1a03 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00001391     0x1a03 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_loclists
-                0x00002c4f      0x36e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+                0x00002d94      0x36e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
  .debug_loclists
-                0x00002fbd       0xf1 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+                0x00003102       0xf1 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
  .debug_loclists
-                0x000030ae       0x7d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+                0x000031f3       0x7d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
  .debug_loclists
-                0x0000312b     0x116f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+                0x00003270     0x116f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
  .debug_loclists
-                0x0000429a       0x41 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+                0x000043df       0x41 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
  .debug_loclists
-                0x000042db      0xafa CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+                0x00004420      0xafa CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
  .debug_loclists
-                0x00004dd5     0x24bd CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x00004f1a     0x24bd CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .debug_loclists
-                0x00007292     0x1a12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x000073d7     0x1a12 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
  .debug_loclists
-                0x00008ca4     0x28a5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00008de9     0x28a5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
  .debug_loclists
-                0x0000b549      0x1e0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000b68e      0x1e0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
  .debug_loclists
-                0x0000b729       0x47 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+                0x0000b86e       0x47 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
  .debug_loclists
-                0x0000b770      0x38a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000b8b5      0x38a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
  .debug_loclists
-                0x0000bafa       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000bc3f       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
  .debug_loclists
-                0x0000bb42       0x7e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000bc87       0x7e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
  .debug_loclists
-                0x0000bbc0       0xba CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x0000bd05       0xba CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
  .debug_loclists
-                0x0000bc7a       0x74 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+                0x0000bdbf       0x74 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
  .debug_loclists
-                0x0000bcee       0x35 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x0000be33       0x35 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
  .debug_loclists
-                0x0000bd23       0x4e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x0000be68       0x4e CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
  .debug_loclists
-                0x0000bd71     0x2f65 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x0000beb6     0x2f65 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .debug_loclists
-                0x0000ecd6      0x431 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x0000ee1b      0x431 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
  .debug_loclists
-                0x0000f107      0xe8b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000f24c      0xe8b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_aranges  0x00000000      0xd78
+.debug_aranges  0x00000000      0xd80
  .debug_aranges
-                0x00000000       0x38 CMakeFiles/teclado.dir/teclado.c.obj
+                0x00000000       0x40 CMakeFiles/teclado.dir/teclado.c.obj
  .debug_aranges
-                0x00000038      0x120 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000040      0x120 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_aranges
-                0x00000158       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x00000160       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
  .debug_aranges
-                0x00000180       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+                0x00000188       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
  .debug_aranges
-                0x000001c8       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+                0x000001d0       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
  .debug_aranges
-                0x00000210       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+                0x00000218       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
  .debug_aranges
-                0x00000238       0xb0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000240       0xb0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
  .debug_aranges
-                0x000002e8       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+                0x000002f0       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
  .debug_aranges
-                0x00000308       0x98 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+                0x00000310       0x98 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
  .debug_aranges
-                0x000003a0       0xe0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x000003a8       0xe0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .debug_aranges
-                0x00000480       0xf0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000488       0xf0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
  .debug_aranges
-                0x00000570       0x90 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000578       0x90 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
  .debug_aranges
-                0x00000600       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000608       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
  .debug_aranges
-                0x00000628       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+                0x00000630       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
  .debug_aranges
-                0x00000658       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000660       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
  .debug_aranges
-                0x00000698       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x000006a0       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
  .debug_aranges
-                0x000006c8       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000006d0       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
  .debug_aranges
-                0x00000700       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x00000708       0x48 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
  .debug_aranges
-                0x00000748       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+                0x00000750       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
  .debug_aranges
-                0x00000768       0x60 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x00000770       0x60 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .debug_aranges
-                0x000007c8       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x000007d0       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
  .debug_aranges
-                0x00000808      0x140 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x00000810      0x140 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
  .debug_aranges
-                0x00000948       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x00000950       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
  .debug_aranges
-                0x00000970       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x00000978       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
  .debug_aranges
-                0x00000990       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x00000998       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
  .debug_aranges
-                0x000009b0      0x130 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+                0x000009b8      0x130 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
  .debug_aranges
-                0x00000ae0       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x00000ae8       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
  .debug_aranges
-                0x00000b08       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000b10       0x38 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .debug_aranges
-                0x00000b40       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x00000b48       0x18 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .debug_aranges
-                0x00000b58       0x90 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x00000b60       0x90 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .debug_aranges
-                0x00000be8       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
+                0x00000bf0       0x28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
  .debug_aranges
-                0x00000c10       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x00000c18       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
  .debug_aranges
-                0x00000cb0       0xc8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000cb8       0xc8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
 .debug_rnglists
-                0x00000000     0x2cba
+                0x00000000     0x2d31
  .debug_rnglists
-                0x00000000      0x53f CMakeFiles/teclado.dir/teclado.c.obj
+                0x00000000      0x5b6 CMakeFiles/teclado.dir/teclado.c.obj
  .debug_rnglists
-                0x0000053f      0x5c7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x000005b6      0x5c7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_rnglists
-                0x00000b06       0x19 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x00000b7d       0x19 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
  .debug_rnglists
-                0x00000b1f       0xc5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+                0x00000b96       0xc5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
  .debug_rnglists
-                0x00000be4       0x67 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000c5b       0x67 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
  .debug_rnglists
-                0x00000c4b       0x3d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+                0x00000cc2       0x3d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
  .debug_rnglists
-                0x00000c88      0x355 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000cff      0x355 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
  .debug_rnglists
-                0x00000fdd       0x1f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+                0x00001054       0x1f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
  .debug_rnglists
-                0x00000ffc      0x32c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+                0x00001073      0x32c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
  .debug_rnglists
-                0x00001328      0x77c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+                0x0000139f      0x77c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
  .debug_rnglists
-                0x00001aa4      0x2c6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+                0x00001b1b      0x2c6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
  .debug_rnglists
-                0x00001d6a      0x4ad CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00001de1      0x4ad CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
  .debug_rnglists
-                0x00002217       0x5c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000228e       0x5c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
  .debug_rnglists
-                0x00002273       0x2b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+                0x000022ea       0x2b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
  .debug_rnglists
-                0x0000229e      0x10c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00002315      0x10c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
  .debug_rnglists
-                0x000023aa       0x2b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00002421       0x2b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
  .debug_rnglists
-                0x000023d5       0x3d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000244c       0x3d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
  .debug_rnglists
-                0x00002412       0x49 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x00002489       0x49 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
  .debug_rnglists
-                0x0000245b       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+                0x000024d2       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
  .debug_rnglists
-                0x0000247b       0x43 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000024f2       0x43 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .debug_rnglists
-                0x000024be       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x00002535       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
  .debug_rnglists
-                0x000024ea       0xec CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x00002561       0xec CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
  .debug_rnglists
-                0x000025d6       0x1a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x0000264d       0x1a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
  .debug_rnglists
-                0x000025f0       0xdf CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+                0x00002667       0xdf CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
  .debug_rnglists
-                0x000026cf       0x19 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x00002746       0x19 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
  .debug_rnglists
-                0x000026e8       0x25 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000275f       0x25 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .debug_rnglists
-                0x0000270d      0x27c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+                0x00002784      0x27c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
  .debug_rnglists
-                0x00002989       0x1b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
+                0x00002a00       0x1b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
  .debug_rnglists
-                0x000029a4       0x7f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x00002a1b       0x7f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
  .debug_rnglists
-                0x00002a23      0x297 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00002a9a      0x297 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_line     0x00000000    0x15f9b
- .debug_line    0x00000000     0x1e25 CMakeFiles/teclado.dir/teclado.c.obj
- .debug_line    0x00001e25     0x1c97 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00003abc      0x28a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_line    0x00003d46      0x930 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
- .debug_line    0x00004676      0x4d2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00004b48      0x3ba CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_line    0x00004f02     0x1716 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00006618      0x2e5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x000068fd     0x1b28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00008425     0x3136 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
- .debug_line    0x0000b55b     0x1d34 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x0000d28f     0x1e10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x0000f09f      0x500 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x0000f59f      0x344 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_line    0x0000f8e3      0x47b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000fd5e      0x35d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x000100bb      0x319 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x000103d4      0x542 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_line    0x00010916      0x567 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_line    0x00010e7d      0x107 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x00010f84      0x2a9 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_line    0x0001122d      0x3f3 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_line    0x00011620      0x568 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_line    0x00011b88       0x5d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_line    0x00011be5       0x61 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x00011c46      0x3a8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_line    0x00011fee      0x424 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_line    0x00012412       0x94 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x000124a6      0x1f5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_line    0x0001269b     0x1b8f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0001422a       0xa5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_line    0x000142cf      0x870 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_line    0x00014b3f     0x145c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_line     0x00000000    0x16168
+ .debug_line    0x00000000     0x1ff2 CMakeFiles/teclado.dir/teclado.c.obj
+ .debug_line    0x00001ff2     0x1c97 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00003c89      0x28a CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_line    0x00003f13      0x930 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+ .debug_line    0x00004843      0x4d2 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00004d15      0x3ba CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_line    0x000050cf     0x1716 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000067e5      0x2e5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00006aca     0x1b28 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x000085f2     0x3136 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+ .debug_line    0x0000b728     0x1d34 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000d45c     0x1e10 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x0000f26c      0x500 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x0000f76c      0x344 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_line    0x0000fab0      0x47b CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000ff2b      0x35d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00010288      0x319 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x000105a1      0x542 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_line    0x00010ae3      0x567 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_line    0x0001104a      0x107 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x00011151      0x2a9 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_line    0x000113fa      0x3f3 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_line    0x000117ed      0x568 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_line    0x00011d55       0x5d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_line    0x00011db2       0x61 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x00011e13      0x3a8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_line    0x000121bb      0x424 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_line    0x000125df       0x94 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x00012673      0x1f5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_line    0x00012868     0x1b8f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x000143f7       0xa5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_line    0x0001449c      0x870 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_line    0x00014d0c     0x145c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_str      0x00000000     0x4387
- .debug_str     0x00000000     0x4387 CMakeFiles/teclado.dir/teclado.c.obj
-                                0x893 (size before relaxing)
- .debug_str     0x00004387      0xc96 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_str     0x00004387      0x221 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_str     0x00004387      0x3a4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
- .debug_str     0x00004387      0x34d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
- .debug_str     0x00004387      0x260 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_str     0x00004387      0xa84 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
- .debug_str     0x00004387      0x22c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
- .debug_str     0x00004387      0x7bf CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
- .debug_str     0x00004387     0x11bc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
- .debug_str     0x00004387      0xa07 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
- .debug_str     0x00004387      0x9b6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_str     0x00004387      0x47f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
- .debug_str     0x00004387      0x2ae CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_str     0x00004387      0x35c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_str     0x00004387      0x263 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_str     0x00004387      0x2b3 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_str     0x00004387      0x7a7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_str     0x00004387      0x4bb CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_str     0x00004387       0xab CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_str     0x00004387       0xae CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_str     0x00004387       0xb0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_str     0x00004387      0x302 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_str     0x00004387       0xb6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_str     0x00004387       0xb4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_str     0x00004387       0xae CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_str     0x00004387      0x2c7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_str     0x00004387       0xab CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_str     0x00004387      0x45c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_str     0x00004387      0x4f6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
- .debug_str     0x00004387       0x9f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_str     0x00004387      0x741 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_str     0x00004387      0xae5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_str      0x00000000     0x43b6
+ .debug_str     0x00000000     0x43b6 CMakeFiles/teclado.dir/teclado.c.obj
+                                0x8ec (size before relaxing)
+ .debug_str     0x000043b6      0xc96 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_str     0x000043b6      0x221 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_str     0x000043b6      0x3a4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+ .debug_str     0x000043b6      0x34d CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x000043b6      0x260 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_str     0x000043b6      0xa84 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x000043b6      0x22c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x000043b6      0x7bf CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x000043b6     0x11bc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+ .debug_str     0x000043b6      0xa07 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x000043b6      0x9b6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x000043b6      0x47f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x000043b6      0x2ae CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_str     0x000043b6      0x35c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x000043b6      0x263 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x000043b6      0x2b3 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x000043b6      0x7a7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_str     0x000043b6      0x4bb CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_str     0x000043b6       0xab CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x000043b6       0xae CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_str     0x000043b6       0xb0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_str     0x000043b6      0x302 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_str     0x000043b6       0xb6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_str     0x000043b6       0xb4 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_str     0x000043b6       0xae CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_str     0x000043b6      0x2c7 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_str     0x000043b6       0xab CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x000043b6      0x45c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_str     0x000043b6      0x4f6 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x000043b6       0x9f CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_str     0x000043b6      0x741 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_str     0x000043b6      0xae5 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_frame    0x00000000     0x19dc
- .debug_frame   0x00000000       0x88 CMakeFiles/teclado.dir/teclado.c.obj
- .debug_frame   0x00000088      0x330 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_frame   0x000003b8       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_frame   0x000003fc       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
- .debug_frame   0x0000049c       0xa8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
- .debug_frame   0x00000544       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_frame   0x00000574      0x1bc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
- .debug_frame   0x00000730       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
- .debug_frame   0x00000750      0x1e0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
- .debug_frame   0x00000930      0x2d0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
- .debug_frame   0x00000c00      0x2c0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
- .debug_frame   0x00000ec0      0x1f0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_frame   0x000010b0       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
- .debug_frame   0x000010f0       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_frame   0x00001130       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_frame   0x000011d0       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_frame   0x00001210       0x70 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_frame   0x00001280       0x84 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_frame   0x00001304       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_frame   0x00001330       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_frame   0x00001374       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_frame   0x000013b4      0x1ec CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
- .debug_frame   0x000015a0      0x174 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_frame   0x00001714      0x2a0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_frame   0x000019b4       0x28 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp\libg.a(libc_a-strlen-stub.o)
+.debug_frame    0x00000000     0x1a10
+ .debug_frame   0x00000000       0xbc CMakeFiles/teclado.dir/teclado.c.obj
+ .debug_frame   0x000000bc      0x330 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_frame   0x000003ec       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_frame   0x00000430       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/hardware_claim/claim.c.obj
+ .debug_frame   0x000004d0       0xa8 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_frame   0x00000578       0x30 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_frame   0x000005a8      0x1bc CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_frame   0x00000764       0x20 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/lock_core.c.obj
+ .debug_frame   0x00000784      0x1e0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_sync/mutex.c.obj
+ .debug_frame   0x00000964      0x2d0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/common/pico_time/time.c.obj
+ .debug_frame   0x00000c34      0x2c0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_frame   0x00000ef4      0x1f0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_frame   0x000010e4       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_frame   0x00001124       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_frame   0x00001164       0xa0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_frame   0x00001204       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_frame   0x00001244       0x70 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_frame   0x000012b4       0x84 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_frame   0x00001338       0x2c CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_frame   0x00001364       0x44 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_frame   0x000013a8       0x40 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_frame   0x000013e8      0x1ec CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj
+ .debug_frame   0x000015d4      0x174 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_frame   0x00001748      0x2a0 CMakeFiles/teclado.dir/C_/Users/hiago/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_frame   0x000019e8       0x28 C:/Users/hiago/.pico-sdk/toolchain/13_3_Rel1/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v6-m/nofp\libg.a(libc_a-strlen-stub.o)
 
 .debug_line_str
                 0x00000000      0x364

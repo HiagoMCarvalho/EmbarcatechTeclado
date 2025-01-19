@@ -8,12 +8,11 @@
 #define LED_B 12
 #define LED_R 13
 
-#define BUZZER_PIN 19
+#define BUZZER_PIN 21
 
 // Pinos do teclado matricial
 const uint row_pins[ROWS] = {2, 3, 4, 5};  // GPIO para linhas
 const uint col_pins[COLS] = {6, 7, 8, 9};  // GPIO para colunas
-
 
 // Mapeamento de teclas do teclado matricial
 const char keys[ROWS][COLS] = {
@@ -48,16 +47,15 @@ void init_pins() {
     gpio_set_dir(LED_G, GPIO_OUT);
     gpio_put(LED_G, 0);
 
-     // Configurar pino do led azul como saída
+    // Configurar pino do led azul como saída
     gpio_init(LED_B);
     gpio_set_dir(LED_B, GPIO_OUT);
     gpio_put(LED_B, 0);
 
-     // Configurar pino do led vermelho como saída
+    // Configurar pino do led vermelho como saída
     gpio_init(LED_R);
     gpio_set_dir(LED_R, GPIO_OUT);
     gpio_put(LED_R, 0);
-    
 }
 
 char scan_keypad() {
@@ -82,6 +80,20 @@ char scan_keypad() {
     return 0; // Nenhuma tecla pressionada
 }
 
+
+void buzz(int duracao_ms, int frequencia_hz) {
+    int atraso_us = 1000000 / (2 * frequencia_hz);
+    int ciclos = (duracao_ms * 1000) / (2 * atraso_us);
+    for (int i = 0; i < ciclos; i++) {
+        gpio_put(BUZZER_PIN, 1);
+        sleep_us(atraso_us);
+        gpio_put(BUZZER_PIN, 0);
+        sleep_us(atraso_us);
+    }
+}
+
+//Função control_components:
+//Chamada da função buzz ao pressionar a tecla #: buzz(250, 400);
 void control_components(char key, bool pressed) {
     switch (key) {
         case 'A': // Controla LED verde
@@ -99,7 +111,9 @@ void control_components(char key, bool pressed) {
             gpio_put(LED_R, pressed);
             break;
         case '#': // Controla o buzzer
-            gpio_put(BUZZER_PIN, pressed);
+            if (pressed) {
+                buzz(250, 400); // 400 Hz por 250 ms
+            }
             break;
         default:
             break;
@@ -116,7 +130,7 @@ int main() {
             printf("Tecla pressionada: %c\n", key);
             control_components(key, true);
         } else {
-            // Desliga LEDs e buzzer quando nenhuma tecla está pressionada
+            // Desliga LEDs quando nenhuma tecla está pressionada
             gpio_put(LED_G, 0);
             gpio_put(LED_B, 0);
             gpio_put(LED_R, 0);
