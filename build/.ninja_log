@@ -120,3 +120,5 @@
 1341	2093	7590298139849560	CMakeFiles/teclado.dir/C_/Users/breno/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_float/float_math.c.obj	dc69751c212c6012
 1216	2162	7590298138591934	CMakeFiles/teclado.dir/C_/Users/breno/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_double/double_math.c.obj	78f46640893ba151
 1429	2232	7590298140717929	CMakeFiles/teclado.dir/C_/Users/breno/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_printf/printf.c.obj	ca0ae1665037a10b
+41	345	7590318392754676	CMakeFiles/teclado.dir/teclado.c.obj	84af43c848e3e059
+346	612	7590318395803718	teclado.elf	9b708034e6928ae4

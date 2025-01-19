@@ -363,10 +363,10 @@ Disassembly of section .text:
 1000031e:	f000 f995 	bl	1000064c <gpio_set_pulls>
 10000322:	4545      	cmp	r5, r8
 10000324:	d1f1      	bne.n	1000030a <init_pins+0x36>
-10000326:	2013      	movs	r0, #19
+10000326:	2015      	movs	r0, #21
 10000328:	f000 f9a4 	bl	10000674 <gpio_init>
 1000032c:	2380      	movs	r3, #128	@ 0x80
-1000032e:	031b      	lsls	r3, r3, #12
+1000032e:	039b      	lsls	r3, r3, #14
 10000330:	6273      	str	r3, [r6, #36]	@ 0x24
 10000332:	200b      	movs	r0, #11
 10000334:	61b3      	str	r3, [r6, #24]
@@ -515,7 +515,7 @@ Disassembly of section .text:
 1000045c:	019b      	lsls	r3, r3, #6
 1000045e:	61a3      	str	r3, [r4, #24]
 10000460:	2380      	movs	r3, #128	@ 0x80
-10000462:	031b      	lsls	r3, r3, #12
+10000462:	039b      	lsls	r3, r3, #14
 10000464:	61a3      	str	r3, [r4, #24]
 10000466:	2064      	movs	r0, #100	@ 0x64
 10000468:	f000 fd0c 	bl	10000e84 <sleep_ms>
@@ -691,7 +691,7 @@ Disassembly of section .text:
 100005e6:	061b      	lsls	r3, r3, #24
 100005e8:	469a      	mov	sl, r3
 100005ea:	2380      	movs	r3, #128	@ 0x80
-100005ec:	031b      	lsls	r3, r3, #12
+100005ec:	039b      	lsls	r3, r3, #14
 100005ee:	2564      	movs	r5, #100	@ 0x64
 100005f0:	4699      	mov	r9, r3
 100005f2:	4653      	mov	r3, sl
