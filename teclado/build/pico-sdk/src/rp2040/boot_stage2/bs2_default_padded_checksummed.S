@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/hiago/Documents/Embarcatech/codigos/EmbarcatechTeclado/teclado/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/Elmer Carvalho/Documents/Projetos-DEV/EmbarcaTech/EmbarcatechTeclado/teclado/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb
