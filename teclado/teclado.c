@@ -58,7 +58,7 @@ void init_pins() {
     gpio_put(LED_R, 0);
 }
 
-char scan_keypad() {
+char escanearTeclado() {
     for (int row = 0; row < ROWS; row++) {
         // Ativar linha atual
         gpio_put(row_pins[row], 0);
@@ -125,7 +125,7 @@ int main() {
     init_pins();
 
     while (true) {
-        char key = scan_keypad();
+        char key = escanearTeclado();
         if (key) {
             printf("Tecla pressionada: %c\n", key);
             control_components(key, true);
