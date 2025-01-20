@@ -8,7 +8,7 @@
 #define LED_B 12
 #define LED_R 13
 
-#define BUZZER_PIN 21
+#define BUZZER_PIN 19
 
 // Pinos do teclado matricial
 const uint row_pins[ROWS] = {2, 3, 4, 5};  // GPIO para linhas
@@ -79,7 +79,6 @@ char scan_keypad() {
 
     return 0; // Nenhuma tecla pressionada
 }
-
 
 void buzz(int duracao_ms, int frequencia_hz) {
     int atraso_us = 1000000 / (2 * frequencia_hz);
